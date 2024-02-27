@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <router-link to='/'>
                 <img class="img-fluid" src="https://cdn-thumbs.imagevenue.com/41/17/8c/ME17P66F_t.png" alt="logo">
@@ -60,7 +60,9 @@ export default {
 
 <style>
 .navbar-nav li {
-    margin-inline: .2rem;
+    margin-inline: .4rem;
+
 }
+
 
 </style>

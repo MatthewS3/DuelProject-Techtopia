@@ -1,13 +1,27 @@
 <template>
   <div id="header-hero">
-    <div class="header-bg"> <img src="https://cdn-images.imagevenue.com/66/83/18/ME17P71S_o.jpg" alt="header-image" />
+    <div class="header-bg">
+      <img src="https://cdn-images.imagevenue.com/66/83/18/ME17P71S_o.jpg" alt="header-image" />
     </div>
     <div class="header-content">
+      <div class="text-container">
+        <span>T</span>
+        <span>E</span>
+        <span>C</span>
+        <span>H</span>
+        <span>T</span>
+        <span>O</span>
+        <span>P</span>
+        <span>I</span>
+        <span>A</span>
+      </div>
       <p class="heading-1">Latest Collection of 2024</p>
-      <h1>Welcome to Tech<span class="logo-style">Topia</span></h1>
-      <p class="description"> Where Innovation Meets Tomorrow.
-        Your gateway to cutting-edge solutions and digital transformation. We redefine possibilities and build a tomorrow
-        that's smarter, faster, and more connected than ever before.</p>
+      <!-- <h1>Welcome to Tech<span class="logo-style">Topia</span></h1> -->
+      <p class="description">
+        Where Innovation Meets Tomorrow. Your gateway to cutting-edge solutions and
+        digital transformation. We redefine possibilities and build a tomorrow that's
+        smarter, faster, and more connected than ever before.
+      </p>
       <div class="button">
         <p>shop now</p>
       </div>
@@ -17,17 +31,23 @@
     <div class="container">
       <div class="sc-content">
         <h1>Featured collection</h1>
-        <p class="description">Elevate your audio experience with the immersive sound of the JBL Bluetooth speaker. From
-          pumping bass to crisp highs, every note is delivered with precision and clarity, making your favorite music come
-          alive like never before. The JBL speaker ensures that the beat never stops. Pair it effortlessly with the latest
-          iPhone 14 for a seamless audio connection, taking advantage of
-          cutting-edge technology to enhance your listening pleasure. With its sleek design and advanced features, the
-          iPhone 14 offers not just a phone, but a lifestyle upgrade.</p>
+        <p class="description">
+          Elevate your audio experience with the immersive sound of the JBL Bluetooth
+          speaker. From pumping bass to crisp highs, every note is delivered with
+          precision and clarity, making your favorite music come alive like never before.
+          The JBL speaker ensures that the beat never stops. Pair it effortlessly with the
+          latest iPhone 14 for a seamless audio connection, taking advantage of
+          cutting-edge technology to enhance your listening pleasure. With its sleek
+          design and advanced features, the iPhone 14 offers not just a phone, but a
+          lifestyle upgrade.
+        </p>
       </div>
       <div class="sc-media">
-        <div class="sc-media-bg"> <img src="https://cdn-images.imagevenue.com/d0/37/72/ME17P723_o.png" alt="sc-image">
+        <div class="sc-media-bg">
+          <img src="https://cdn-images.imagevenue.com/d0/37/72/ME17P723_o.png" alt="sc-image" />
         </div>
-        <div class="sc-media-bg"> <img src="https://cdn-images.imagevenue.com/4a/d5/3c/ME17P725_o.png" alt="sc-image">
+        <div class="sc-media-bg">
+          <img src="https://cdn-images.imagevenue.com/4a/d5/3c/ME17P725_o.png" alt="sc-image" />
         </div>
       </div>
     </div>
@@ -38,106 +58,148 @@
         <h2>popular products</h2>
       </div>
       <div class="product product-1">
-        <figure> <img
-            src="https://cdn-images.imagevenue.com/47/b3/28/ME17P75I_o.jpg"
-            alt="product-image">
-          <figcaption>cold fashion</figcaption>
-          <figcaption>$ 56.00</figcaption>
+        <figure>
+          <img src="https://cdn-images.imagevenue.com/47/b3/28/ME17P75I_o.jpg" alt="product-image" />
+          <figcaption>Xbox Series X Console 1TB</figcaption>
+          <figcaption>R 10 499.99</figcaption>
         </figure>
       </div>
       <div class="product product-2">
-        <figure> <img
-            src=""
-            alt="product-image">
-          <figcaption>women fashion</figcaption>
-          <figcaption>$ 84.00</figcaption>
+        <figure>
+          <img src="https://cdn-images.imagevenue.com/87/fd/aa/ME17PCS8_o.png" alt="product-image" />
+          <figcaption>Samsung Galaxy S24 Ultra 5G</figcaption>
+          <figcaption>R 24 999.99</figcaption>
         </figure>
       </div>
       <div class="product product-3">
-        <figure> <img
-            src="https://cdn-images.imagevenue.com/b6/0b/38/ME17P75K_o.jpg"
-            alt="product-image">
-          <figcaption>women fashion</figcaption>
-          <figcaption>$ 48.00</figcaption>
+        <figure>
+          <img src="https://cdn-images.imagevenue.com/b6/0b/38/ME17P75K_o.jpg" alt="product-image" />
+          <figcaption>Apple iPhone 15 128GB</figcaption>
+          <figcaption>R19 999.99</figcaption>
         </figure>
       </div>
       <div class="product product-4">
-        <figure> <img
-            src=""
-            alt="product-image">
-          <figcaption>men fashion</figcaption>
-          <figcaption>$ 89.00</figcaption>
+        <figure>
+          <img src="https://cdn-images.imagevenue.com/95/39/38/ME17PCSA_o.png" alt="product-image" />
+          <figcaption>PlayStation 5 Digital Edition 1TB</figcaption>
+          <figcaption>R 9 999.99</figcaption>
         </figure>
-      </div>
-    </div>
-  </section>
-  <section id="collections">
-    <div class="container">
-      <div class="c-1">
-        <div class="c-1-image-holder"> <img
-            src="https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412550/E-commerce%20landing%20page/suit-collections/suit-collection-img_3x.jpg"
-            alt="image"> </div>
-      </div>
-      <div class="c-2">
-        <h2>featured collection</h2>
-        <hr />
-        <div class="c-2-image-holder"> <img class="left"
-            src="https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412552/E-commerce%20landing%20page/suit-collections/collection-2-img_3x.jpg"
-            alt=""><img class="right"
-            src="https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412552/E-commerce%20landing%20page/suit-collections/collection-1-img_3x.jpg"
-            alt=""></div>
-        <p class="button">view all collections</p>
       </div>
     </div>
   </section>
   <section id="blog">
     <div class="container">
       <div class="blog-header">
-        <h2>latest from blog</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <h2>latest Reviews</h2>
+        <p>Here are some reviews from our loyal customers regarding their recent purchased products!</p>
       </div>
       <div class="blog-content">
         <div class="blog-1">
-          <div class="blog-1-image-holder"> <img
-              src="https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412548/E-commerce%20landing%20page/blog/blog-2-img_3x.jpg"
-              alt="image"> </div>
+          <div class="blog-1-image-holder">
+            <img
+              src="https://cdn-images.imagevenue.com/9b/e3/6e/ME17PH5K_o.png"
+              alt="image" />
+          </div>
           <div class="blog-1-content">
-            <h4>Lorem Ipsum</h4>
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <h4>Certified Lover Boy!</h4>
+            <h3>Brandon Roulstone</h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
             <p class="button">view post</p>
           </div>
         </div>
         <div class="blog-2">
-          <div class="blog-2-image-holder"> <img
-              src="https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412543/E-commerce%20landing%20page/blog/blog-1-img_3x.jpg"
-              alt="image"> </div>
+          <div class="blog-2-image-holder">
+            <img
+              src="https://cdn-images.imagevenue.com/76/26/fd/ME17PHA3_o.jpg"
+              alt="image" />
+          </div>
           <div class="blog-2-content">
-            <h4>Lorem Ipsum</h4>
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <h4>Verified Ladies Man!</h4>
+            <h3>Damon Raffels</h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
             <p class="button">view post</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="back-to-top"><a href="#nav"> <img title="Back to Top."
+    <div class="back-to-top">
+      <a href="#nav">
+        <img title="Back to Top."
           src="https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412541/E-commerce%20landing%20page/icons/back_-_top_1x.png"
-          alt="back to top"></a>
+          alt="back to top" /></a>
     </div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'HomeView',
-  components: {
+  name: "HomeView",
+  components: {},
+};
+</script>
+
+
+<style>
+.text-container>span {
+  margin: 15px;
+  padding: 5px;
+  font-size: 50px;
+  text-transform: uppercase;
+  animation: glow 4.75s ease-in-out infinite;
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    color: white;
+    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 50px rgb(181, 37, 12), 0 0 100px rgb(255, 38, 0);
+  }
+
+  10%,
+  90% {
+    color: tomato;
+    text-shadow: none;
   }
 }
-</script>
-<style>
+
+.text-container>span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.text-container>span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.text-container>span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.text-container>span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.text-container>span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.text-container>span:nth-child(7) {
+  animation-delay: 3s;
+}
+.text-container>span:nth-child(8) {
+  animation-delay: 3.5s;
+}
+.text-container>span:nth-child(9) {
+  animation-delay: 4s;
+}
+
+
 #header-hero {
   width: 100%;
   display: block;
@@ -152,6 +214,7 @@ export default {
 #header-hero .header-bg img {
   width: 900px;
   height: 600px;
+  border-radius: 50px;
 }
 
 #header-hero .header-content {
@@ -418,7 +481,7 @@ export default {
 }
 
 #products .container .products-header h2 {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   text-transform: uppercase;
   font-family: "Franklin Gothic Medium";
   color: #000000;
@@ -450,26 +513,26 @@ export default {
 }
 
 #products .container .product:hover {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-  opacity: 0.8;
-  -webkit-transition: opacity 800ms ease-in-out 0s;
-  transition: opacity 800ms ease-in-out 0s;
+  -webkit-transform: scale(1);
+  transform: scale(1.3);
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out 0s;
+  transition: opacity 1s ease-in-out 0s;
   -webkit-transition: -webkit-transform 1s ease-in-out 0s;
   transition: -webkit-transform 1s ease-in-out 0s;
-  transition: transform 1s ease-in-out 0s;
-  transition: transform 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+  transition: transform 1.5s ease-in-out 0s;
+  transition: transform 1.5s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
   cursor: pointer;
 }
 
 #products .container .product figure img {
-  width: 100%;
-  height: auto;
+  width: 240px;
+  height: 290px;
 }
 
 #products .container .product figure figcaption {
   font-family: "Franklin Gothic Medium";
-  color: rgba(89, 89, 89, 1);
+  color: black;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.02rem;
@@ -498,184 +561,18 @@ export default {
   }
 }
 
-#collections {
-  width: 100%;
-  display: block;
-  margin: 6rem 0rem;
-  /*  background-color:  #f5f2f1;*/
-  padding: 1.4rem 0rem;
-}
-
-#collections .container {
-  margin: 0 auto;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#collections .container .c-1 {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 3rem 0rem 0rem 1rem;
-  /*  background-color:  #f5f2f1;*/
-}
-
-#collections .container .c-1 .c-1-image-holder {
-  width: 100%;
-  height: auto;
-}
-
-#collections .container .c-1 .c-1-image-holder img {
-  width: 100%;
-  height: auto;
-}
-
-#collections .container .c-2 .c-2-image-holder {
-  width: 45%;
-  height: auto;
-  margin: 3rem auto;
-}
-
-#collections .container .c-2 .c-2-image-holder img {
-  width: 100%;
-  height: auto;
-}
-
-#collections .container .c-2 {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 1rem;
-  /*  background-color:  #f5f2f1;*/
-}
-
-#collections .container .c-2 h2 {
-  padding: 1rem 0rem;
-  text-align: right;
-  font-family: "Franklin Gothic Medium";
-  font-size: 1.8rem;
-  letter-spacing: 0.094rem;
-  text-transform: uppercase;
-}
-
-#collections .container .c-2 hr {
-  width: 30%;
-  margin-left: 70%;
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 0.1rem solid #a61458;
-  padding: 0;
-  margin-bottom: 4rem;
-}
-
-#collections .container .c-2 p.button {
-  background-color: #e6b58f;
-  -webkit-box-shadow: 0px 1px 3.92px 0.08px rgba(204, 204, 153, 0.35);
-  box-shadow: 0px 1px 3.92px 0.08px rgba(204, 204, 153, 0.35);
-  width: 45%;
-  text-align: center;
-  padding: 0.8rem 0.2rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  margin: 0 auto;
-  margin-right: -1%;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-}
-
-#collections .container .c-2 p.button:hover {
-  cursor: pointer;
-  background-color: #ffffff;
-  color: #ff981f;
-  -webkit-transition: background-color 1s ease-in-out 0s;
-  -o-transition: background-color 1s ease-in-out 0s;
-  transition: background-color 1s ease-in-out 0s;
-  -webkit-transition: color 400ms ease-in-out 0s;
-  -o-transition: color 400ms ease-in-out 0s;
-  transition: color 400ms ease-in-out 0s;
-}
-
-#collections .container .c-2 .left {
-  position: relative;
-  right: -6rem;
-  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-}
-
-#collections .container .c-2 .right {
-  position: relative;
-  top: -2rem;
-  right: 2rem;
-  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-}
-
-@media only screen and (max-width: 1024px) {
-  #collections .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  #collections .container .c-1 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 4rem 0rem 0rem 0rem;
-  }
-
-  #collections .container .c-2 .c-2-image-holder {
-    width: 50%;
-    height: auto;
-    margin: 3rem auto;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #collections .container .c-2 .c-2-image-holder {
-    width: 70%;
-    height: auto;
-    margin: 3rem auto;
-  }
-
-  #collections .container .c-2 .left {
-    position: relative;
-    right: 0rem;
-    margin-bottom: 2rem;
-  }
-
-  #collections .container .c-2 .right {
-    position: relative;
-    top: 0rem;
-    right: 0rem;
-  }
-
-  #collections .container .c-2 p.button {
-    width: 60%;
-    padding: 0.8rem 2rem;
-  }
-}
-
 #blog {
   width: 100%;
   display: block;
   margin: 6rem 0rem 0rem;
-  background-color: #f2f2f2;
+  background-color: #ddd;
   padding: 3rem 0rem 6rem;
 }
 
 #blog .container {
   margin: 0 auto;
   width: 80%;
-  background-color: #f2f2f2;
+  background-color: #ddd;
 }
 
 #blog .container .blog-header {
@@ -697,7 +594,7 @@ export default {
 
 #blog .container .blog-header p {
   font-family: Cambria;
-  color: rgba(89, 89, 89, 1);
+  color: #111;
   font-size: 1rem;
   font-style: italic;
   line-height: 1.5;
@@ -734,7 +631,7 @@ export default {
 
 #blog .container .blog-content .blog-1 .blog-1-content {
   width: 50%;
-  background-color: #fff;
+  background-color: #111;
   margin-left: -10%;
   margin-top: 4%;
   padding: 4%;
@@ -744,7 +641,7 @@ export default {
 
 #blog .container .blog-content .blog-1 .blog-1-content h4 {
   text-transform: uppercase;
-  color: #999999;
+  color: #ddd;
   font-weight: 400;
   font-size: 0.8rem;
   margin-bottom: 1rem;
@@ -753,12 +650,14 @@ export default {
 #blog .container .blog-content .blog-1 .blog-1-content h3 {
   text-transform: uppercase;
   padding-bottom: 6%;
+  color: tomato;
 }
 
 #blog .container .blog-content .blog-1 .blog-1-content p.description {
   font-family: Cambria;
   font-style: italic;
   padding-bottom: 8%;
+  color: #ddd;
 }
 
 #blog .container .blog-content .blog-1 .blog-1-content p.button {
@@ -768,16 +667,16 @@ export default {
   text-transform: uppercase;
   font-weight: 500;
   padding: 4%;
-  color: #fff;
-  background-color: rgba(166, 20, 88, 0.8);
+  color: #000;
+  background-color: tomato;
   -webkit-box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
-  box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 1px 5px 0.16px rgba(0, 0, 0, 0.35);
 }
 
 #blog .container .blog-content .blog-1 .blog-1-content p.button:hover {
   cursor: pointer;
-  background-color: #ffffff;
-  color: rgba(166, 20, 88, 0.8);
+  background-color: #333;
+  color: #ddd;
   -webkit-transition: background-color 1s ease-in-out 0s;
   -o-transition: background-color 1s ease-in-out 0s;
   transition: background-color 1s ease-in-out 0s;
@@ -809,7 +708,7 @@ export default {
 
 #blog .container .blog-content .blog-2 .blog-2-content {
   width: 50%;
-  background-color: #fff;
+  background-color: #111;
   margin-left: -10%;
   margin-top: 4%;
   padding: 4%;
@@ -819,7 +718,7 @@ export default {
 
 #blog .container .blog-content .blog-2 .blog-2-content h4 {
   text-transform: uppercase;
-  color: #999999;
+  color: #ddd;
   font-weight: 400;
   font-size: 0.8rem;
   margin-bottom: 1rem;
@@ -828,12 +727,16 @@ export default {
 #blog .container .blog-content .blog-2 .blog-2-content h3 {
   text-transform: uppercase;
   padding-bottom: 6%;
+  color: tomato;
+
 }
 
 #blog .container .blog-content .blog-2 .blog-2-content p.description {
   font-family: Cambria;
   font-style: italic;
   padding-bottom: 8%;
+  color: #ddd;
+
 }
 
 #blog .container .blog-content .blog-2 .blog-2-content p.button {
@@ -843,16 +746,16 @@ export default {
   text-transform: uppercase;
   font-weight: 500;
   padding: 4%;
-  color: #fff;
-  background-color: rgba(166, 20, 88, 0.8);
+  color: #000;
+  background-color: tomato;
   -webkit-box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 1px 3.84px 0.16px rgba(0, 0, 0, 0.35);
 }
 
 #blog .container .blog-content .blog-2 .blog-2-content p.button:hover {
   cursor: pointer;
-  background-color: #ffffff;
-  color: rgba(166, 20, 88, 0.8);
+  background-color: #333;
+  color: #ddd;
   -webkit-transition: background-color 1s ease-in-out 0s;
   -o-transition: background-color 1s ease-in-out 0s;
   transition: background-color 1s ease-in-out 0s;

@@ -103,23 +103,21 @@
 </template>
 
 <script>
-    export default {
-        computed:{
-            users() {
-                return this.$store.state.users
-            },
-            products() {
-                return this.$store.state.products
-            }
+export default {
+    computed: {
+        users() {
+            return this.$store.state.users
         },
-        mounted() {
-            this.$store.dispatch('fetchUsers')
-            this.$store.dispatch('fetchProducts')
-
+        products() {
+            return this.$store.state.products
         }
+    },
+    mounted() {
+        this.$store.dispatch('fetchUsers')
+        this.$store.dispatch('fetchProducts')
+
     }
+}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
