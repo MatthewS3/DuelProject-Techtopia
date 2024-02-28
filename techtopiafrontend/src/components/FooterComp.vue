@@ -8,7 +8,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
                                 <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                                <span>6969 Dunno Avenue, Observatory, Cape Town</span>
                             </div>
                         </div>
                     </div>
@@ -17,7 +17,7 @@
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
                                 <h4>Call us</h4>
-                                <span>9876543210 0</span>
+                                <span>+27 12 345 6789</span>
                             </div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                             <i class="far fa-envelope-open"></i>
                             <div class="cta-text">
                                 <h4>Mail us</h4>
-                                <span>mail@info.com</span>
+                                <span>TechTopia@gmail.com.com</span>
                             </div>
                         </div>
                     </div>
@@ -37,17 +37,10 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                                <a href="index.html"><img src="https://cdn-thumbs.imagevenue.com/41/17/8c/ME17P66F_t.png" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
-                            </div>
-                            <div class="footer-social-icon">
-                                <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                <p>TechTopia: Where Innovation Meets Tomorrow.<br></p>
                             </div>
                         </div>
                     </div>
@@ -58,30 +51,26 @@
                             </div>
                             <ul>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Customer Care</a></li>
+                                <li><a href="#">Customer Enquiries</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
+                                <h3>Log in / Sign Up</h3>
                             </div>
                             <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                <p>Sign up Or Log in To have a wider range of endless Products.</p>
                             </div>
                             <div class="subscribe-form">
                                 <form action="#">
                                     <input type="text" placeholder="Email Address">
-                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                    <button><i class="fab fa-telegram-plane">Ok</i></button>
                                 </form>
                             </div>
                         </div>
@@ -92,20 +81,9 @@
         <div class="copyright-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="col-xl-6 col-lg-6 text-center">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
+                            <p>Copyright &copy; 2024, All Right Reserved - TechTopia</p>
                         </div>
                     </div>
                 </div>
@@ -116,7 +94,6 @@
 
 <script>
     export default {
-        
     }
 </script>
 
@@ -126,17 +103,17 @@
     padding: 0px;
 }
 .footer-section {
-  background: #151414;
+  background: #000;
   position: relative;
 }
 .footer-cta {
-  border-bottom: 1px solid #373636;
+  border-bottom: 1px solid tomato;
 }
 .single-cta i {
-  color: #ff5e14;
-  font-size: 30px;
+  color: tomato;
+  font-size: 10px;
   float: left;
-  margin-top: 8px;
+  margin-top: 2px;
 }
 .cta-text {
   padding-left: 15px;
@@ -149,7 +126,7 @@
   margin-bottom: 2px;
 }
 .cta-text span {
-  color: #757575;
+  color: #ddd;
   font-size: 15px;
 }
 .footer-content {
@@ -173,7 +150,7 @@
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+      color: tomato;
   line-height: 28px;
 }
 .footer-social-icon span {
@@ -219,7 +196,7 @@
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: #ff5e14;
+  background: tomato;
 }
 .footer-widget ul li {
   display: inline-block;
@@ -227,7 +204,7 @@
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  color: #ff5e14;
+  color: tomato;
 }
 .footer-widget ul li a {
   color: #878787;
@@ -239,17 +216,22 @@
 }
 .subscribe-form input {
   width: 100%;
-  padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
+  height: 40px;
+  padding: 1px 15px;
+  background: #ddd;
+  border: 1px solid tomato;
+  color: #111;
+  border-radius: 20px;
+
 }
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #ff5e14;
-    padding: 13px 20px;
-    border: 1px solid #ff5e14;
+    color: black;
+    background: tomato;
+    padding: 3px 15px;
+    border: 1px solid tomato;
+    border-radius: 20px;
     top: 0;
 }
 .subscribe-form button i {
@@ -258,7 +240,7 @@
   transform: rotate(-6deg);
 }
 .copyright-area{
-  background: #202020;
+  background: #111;
   padding: 25px 0;
 }
 .copyright-text p {
@@ -267,17 +249,17 @@
   color: #878787;
 }
 .copyright-text p a{
-  color: #ff5e14;
+  color: tomato;
 }
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
 .footer-menu li:hover a{
-  color: #ff5e14;
+  color: tomato;
 }
 .footer-menu li a {
   font-size: 14px;
-  color: #878787;
+  color: #111;
 }
 </style>
