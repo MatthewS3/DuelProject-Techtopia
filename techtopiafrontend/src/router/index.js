@@ -14,27 +14,27 @@ const routes = [
   {
     path: '/products',
     name: 'products',
-    component: () => import( '../views/Products.vue')
+    component: () => import('../views/Products.vue')
   },
   {
-    path: '/product/:id',
+    path: '/product',
     name: 'product',
-    component: () => import( '../views/ProductView.vue')
+    component: () => import('../views/ProductView.vue')
   },
   {
     path: '/admin',
     name: 'admin',
-    component: () => import( '../views/AdminView.vue')
+    component: () => import('../views/AdminView.vue')
   },
   {
     path: '/contact',
     name: 'contact',
-    component: () => import( '../views/ContactView.vue')
+    component: () => import('../views/ContactView.vue')
   },
   {
     path: '/login',
     name: 'login',
-    component: () => import( '../views/LoginView.vue')
+    component: () => import('../views/LoginView.vue')
   }
 ]
 
@@ -44,4 +44,3 @@ const router = createRouter({
 })
 
 export default router
-

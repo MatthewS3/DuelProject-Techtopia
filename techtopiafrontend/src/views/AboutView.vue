@@ -67,44 +67,39 @@
             </div>
             <h2 class="card-title">Joel Williams</h2>
             <p class="card-detail">
-              "Working with Matthew has been an absolute pleasure, and I couldn't be more
-              grateful for their invaluable contributions to our web development projects.
-              He is not just a talented developer, but a great friend. Their passion for web
-              development is evident in every task they undertake.He approaches each project
-              with enthusiasm and dedication, consistency. What truly stands out is
-              Matthew's helpful nature, hi always ready to lend a hand to his friends.
+              "Co-Founder and Co-Owner of TechTopia"
+              <br>
+              "Joel Williams"
             </p>
           </div>
         </div>
-
         <div class="card">
           <input id="card3" type="checkbox" />
           <label class="tgl-btn" for="card3"><span></span></label>
           <div class="tgl-view">
             <div class="card-image">
-              <img src="https://cdn-images.imagevenue.com/14/07/b8/ME17PLS6_o.png" alt="aakeefah" />
+              <img src="https://cdn-images.imagevenue.com/76/01/17/ME17PVJL_o.jpg" alt="aakeefah" />
             </div>
             <h2 class="card-title">Matthew Swain</h2>
             <p class="card-detail">
-              "Founder and Co-Owner of TechTopia Matthew Swain."
+              "Founder and Co-Owner of TechTopia"
+              <br>
+              "Matthew Swain."
             </p>
           </div>
         </div>
         <div class="card">
-          <input id="card1" type="checkbox" />
-          <label class="tgl-btn" for="card1"><span></span></label>
+          <input id="card6" type="checkbox" />
+          <label class="tgl-btn" for="card6"><span></span></label>
           <div class="tgl-view">
             <div class="card-image">
-              <img src="https://i.postimg.cc/nh7CTq4z/20240110-140911.jpg" alt="veronique" />
+              <img src="" alt="tamlin" />
             </div>
-            <h2 class="card-title">Veronique Nappie</h2>
+            <h2 class="card-title">Luqmaan Toffey</h2>
             <p class="card-detail">
-              Matthew has been a continuous surprise for me. I've gotten to know him a lot
-              better over the past few weeks and I've seen a different side to him. He seems
-              to handle pressure very well and puts a lot of effort into 'getting the job
-              done'. He is incredibly professional and has so much creativity to share. I
-              hope he continues on this path because he has a lot to give and I'd like for
-              everyone to see that.
+              "Financial Advisory Of TechTopia"
+              <br>
+              "Luqmaan Toffey"
             </p>
           </div>
         </div>
@@ -121,13 +116,9 @@
             </div>
             <h2 class="card-title">Unity Demas</h2>
             <p class="card-detail">
-              Matt's like the energizer bunny of hard work and focus - he tackles everything
-              with this contagious enthusiasm that's impossible to ignore. Whether he's
-              grinding away at work or just being an all-around awesome friend, Matt's the
-              guy you want in your corner. His dedication is unmatched, and he's got this
-              knack for turning even mundane tasks into something fun. I'm grateful to have
-              him as a friend; he's the kind of person who makes life way more interesting
-              and a whole lot easier.
+              "Web and Office Manager of TechTopia"
+              <br>
+              "Unity Demas"
             </p>
           </div>
         </div>
@@ -141,36 +132,25 @@
             </div>
             <h2 class="card-title">Damon Raffels</h2>
             <p class="card-detail">
-              "Matthew is truly a distinct individual. Reserved, calm while simultaneously
-              being one of the most joyous & fun people you will have the pleasure of
-              meeting and working with. He has unrivaled creativity and curiosity, always
-              furthering his knowledge skills & driving others. He has excellent
-              communication skills and will be an asset to any workforce. His passion and
-              dedication will take him as far as he wants to go. I am truly proud and
-              honored to call him my colleague and most importantly, my close friend
+              "Economic and Business Manager of TechTopia"
+              <br>
+              "Damon Raffels"
             </p>
           </div>
         </div>
 
         <div class="card">
-          <input id="card6" type="checkbox" />
-          <label class="tgl-btn" for="card6"><span></span></label>
+          <input id="card1" type="checkbox" />
+          <label class="tgl-btn" for="card1"><span></span></label>
           <div class="tgl-view">
             <div class="card-image">
-              <img src="https://i.postimg.cc/qqTBjGL8/profile-portfolio.jpg" alt="rezaar" />
+              <img src="https://cdn-images.imagevenue.com/4b/58/22/ME17PVJM_o.jpg" alt="veronique" />
             </div>
-            <h2 class="card-title">Rezaar Osman</h2>
+            <h2 class="card-title">Brandon Roulstone</h2>
             <p class="card-detail">
-              Matthew's passion for the IT industry shines through in every aspect of his
-              work. His diligence and professional attitude contribute to the creation of
-              flawless end results. Matthew's commitment to maintaining high standards sets
-              him apart, ensuring that his work consistently meets or exceeds expectations.
-              What sets him apart is his drive to be unique in his work environment, always
-              seeking ways to innovate and improve. Beyond his professional attributes,
-              Matthew is a great person to befriend, radiating positive energy and making
-              the work atmosphere enjoyable. In summary, Matthew's combination of passion,
-              diligence, high standards, and friendly demeanor make him a valuable asset to
-              any team.
+              "Senior Web Dev And IT Specialist Of TechTopia"
+              <br>
+              "Brandon Roulstone"
             </p>
           </div>
         </div>
@@ -314,7 +294,7 @@
 }
 
 .card .card-image img {
-  height: 433px;
+  height: 400px;
   width: 372px;
   object-fit: cover;
   transition: all 1s cubic-bezier(1, -0.28, 0.66, 0.48);
@@ -359,9 +339,12 @@
   transition: all 1s cubic-bezier(1, -0.28, 0.66, 0.48);
   z-index: -1;
 }
+
 .card .card-detail {
   background: #111;
-  height: auto;
+  height: 500px;
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0;
   color: #ddd;
   transition: all 1s cubic-bezier(1, -0.28, 0.66, 0.48);
