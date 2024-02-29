@@ -33,7 +33,7 @@
 <script>
 import Card from '@/components/Card.vue';
 export default {
-    name: 'ProductsView',
+    name: 'ProductView',
     components: {
         Card
     },

@@ -3,16 +3,21 @@
   <div class="container-fluid">
     <router-view />
   </div>
+  <SpinnerView/>
   <FooterComp />
+
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue';
 import FooterComp from './components/FooterComp.vue';
+import SpinnerView from '@/components/SpinnerView.vue';
+
 export default {
   components: {
     NavBar,
-    FooterComp
+    FooterComp,
+    SpinnerView
   }
 }
 

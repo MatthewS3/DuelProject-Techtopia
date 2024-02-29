@@ -27,25 +27,30 @@
 
 <script>
 export default {
-
+    computed: {
+        users() {
+            return this.$store.state.users
+        }
+    },
+    mounted() {
+        this.$store.dispatch('fetchUsers')
+    },
 }
 </script>
 
 <style>
 .container-fluid1 {
-    background-image: url("https://i.ibb.co/DCXMBpb/background-2426328-640.webp");
     border-radius: 100px;
+    margin-left: 500px;
 
 }
-.div.main {
-    justify-content: center;
-}
+
 .main {
-    width: 350px;
+    width: 500px;
     height: 500px;
     overflow: hidden;
-    border-radius: 50px;
-    background-color: tomato;
+    border-radius: 70px;
+    background-color: #444;
     box-shadow: 5px 20px 50px #000;
 }
 
@@ -55,12 +60,13 @@ export default {
 
 .signup {
     position: relative;
-    width: 100%;
+    width: 500px;
     height: 100%;
 }
 
 label {
-    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ddd;
     font-size: 2.3em;
     justify-content: center;
     display: flex;
@@ -71,16 +77,16 @@ label {
 }
 
 input {
-    width: 60%;
-    height: 20px;
-    background: #e0dede;
+    width: 70%;
+    height: 40px;
+    background: #ddd;
+    color: #000;
     justify-content: center;
     display: flex;
     margin: 20px auto;
     padding: 10px;
     border: none;
-    outline: none;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 button {
@@ -89,32 +95,32 @@ button {
     margin: 10px auto;
     justify-content: center;
     display: block;
-    color: #fff;
-    background: #573b8a;
+    color: #000;
+    background: #999;
     font-size: 1em;
     font-weight: bold;
     margin-top: 20px;
     outline: none;
     border: none;
     border-radius: 5px;
-    transition: .2s ease-in;
+    transition: .5s ease-in;
     cursor: pointer;
 }
 
 button:hover {
-    background: #6d44b8;
+    background: tomato;
 }
 
 .login {
     height: 460px;
-    background: #eee;
+    background: #111;
     border-radius: 60% / 10%;
     transform: translateY(-180px);
-    transition: .8s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .login label {
-    color: #573b8a;
+    color: #ddd;
     transform: scale(.6);
 }
 

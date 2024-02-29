@@ -5,7 +5,9 @@ import { useCookies } from 'vue3-cookies'
 const {cookies} = useCookies()
 import router from '@/router'
 // import AuthenticateUser from '@/service/AuthenticateUser'
-const lifeURL = ''
+const TopiaURL = 'https://nodeeomp-1.onrender.com/'
+
+
 
 export default createStore({
   state: {
@@ -26,14 +28,14 @@ export default createStore({
     setProducts(state, value) {
       state.products = value
     },
-    setProduct(state, value) {
+    setOneProduct(state, value) {
       state.product = value
     },
   },
   actions: {
     async register(context, payload) {
       try{
-        let {msg} = (await axios.post(`${lifeURL}users/register`, payload)).data
+        let msg = (await axios.post(`${TopiaURL}users/register`, payload)).data
         if(msg) {
           context.dispatch('fetchUsers')
           sweet({
@@ -56,7 +58,7 @@ export default createStore({
     },
     async fetchUsers(context) {
       try{
-        let {results} = (await axios.get(`${lifeURL}users`)).data
+        let results = (await axios.get(`${TopiaURL}users`)).data
         if(results) {
           context.commit('setUsers', results)
         }
@@ -71,7 +73,7 @@ export default createStore({
     },
     async fetchUser(context, payload) {
       try{
-        let {result} = (await axios.get(`${lifeURL}users/${payload.id}`)).data
+        let result = (await axios.get(`${TopiaURL}users/${payload.id}`)).data
         if(result) {
           context.commit('setUser', result)
         }else {
@@ -93,7 +95,7 @@ export default createStore({
     },
     async updateUser(context, payload) {
       try{
-        let {msg} = await axios.patch(`${lifeURL}users/update/${payload.id}`)
+        let {msg} = await axios.patch(`${TopiaURL}users/update/${payload.id}`)
         if(msg) {
           context.dispatch('fetchUsers')
           sweet({
@@ -114,7 +116,7 @@ export default createStore({
     },
     async deleteUser(context, payload) {
       try{
-        let {msg} = await axios.delete(`${lifeURL}users/${payload.id}`)
+        let msg = await axios.delete(`${TopiaURL}users/${payload.id}`)
         if(msg) {
           context.dispatch('fetchUsers')
           sweet({
@@ -135,7 +137,7 @@ export default createStore({
     },
     async login(context, payload) {
       try{
-       const {msg, token, result} = (await axios.post(`${lifeURL}users/login`, payload)).data 
+       const {msg, token, result} = (await axios.post(`${TopiaURL}users/login`, payload)).data 
        if(result){
         context.commit('setUser', {msg, result})
         cookies.set('LegitUser', {
@@ -171,8 +173,8 @@ export default createStore({
     },
     async fetchProducts(context) {
       try{
-        let {results} = 
-        (await axios.get(`${lifeURL}products`)).data
+        let results = 
+        (await axios.get(`${TopiaURL}products`)).data
         if(results) {
           context.commit('setProducts', results)
         }
@@ -187,9 +189,9 @@ export default createStore({
     },
     async fetchProduct(context, payload) {
       try{
-        let {result} = (await axios.get(`${lifeURL}products/${payload.id}`)).data
+        let result = (await axios.get(`${TopiaURL}product/${payload.id}`)).data
         if(result) {
-          context.commit('setProduct', result)
+          context.commit('setOneProduct', result)
         }else {
           sweet({
             title: 'Retrieving a single product',
@@ -205,6 +207,19 @@ export default createStore({
           icon: "error",
           timer: 2000
         }) 
+      }
+    },
+    async addProduct(context, payload) {
+      try {
+        let result = await fetch(`${TopiaURL}/product`, payload);
+      let data = result.json( );
+      console.log(data);
+      context.dispatch("fetchProducts");
+      } catch(e) {
+        sweet({
+          title: 'Error',
+          text: '',
+        });
       }
     }
   },
