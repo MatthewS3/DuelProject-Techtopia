@@ -8,13 +8,12 @@ import router from '@/router'
 const TopiaURL = 'https://nodeeomp-1.onrender.com/'
 
 
-
 export default createStore({
   state: {
     users: null,
     user: null,
     products: null,
-    product: null
+    product: []
   },
   getters: {
   },
@@ -33,14 +32,14 @@ export default createStore({
     },
   },
   actions: {
-    async register(context, payload) {
+    async addUser(context, payload) {
       try{
-        let msg = (await axios.post(`${TopiaURL}users/register`, payload)).data
+        let msg = await axios.post(`${TopiaURL}user`, payload)
         if(msg) {
           context.dispatch('fetchUsers')
           sweet({
-            title: 'Registration',
-            text: msg,
+            title: 'User Added',
+            text: "You have successfully registered!",
             icon: "success",
             timer: 2000
           }) 
@@ -73,7 +72,7 @@ export default createStore({
     },
     async fetchUser(context, payload) {
       try{
-        let result = (await axios.get(`${TopiaURL}users/${payload.id}`)).data
+        let result = (await axios.get(`${TopiaURL}users/${payload}`)).data
         if(result) {
           context.commit('setUser', result)
         }else {
@@ -93,14 +92,14 @@ export default createStore({
         }) 
       }
     },
-    async updateUser(context, payload) {
+    async editUser(context, payload) {
       try{
-        let {msg} = await axios.patch(`${TopiaURL}users/update/${payload.id}`)
+        let {msg} = await axios.patch(`${TopiaURL}users/${payload.id}`, payload)
         if(msg) {
           context.dispatch('fetchUsers')
           sweet({
-            title: 'Update user',
-            text: msg,
+            title: 'Edit user',
+            text: "The user has been edited.",
             icon: "success",
             timer: 2000
           }) 
@@ -116,12 +115,13 @@ export default createStore({
     },
     async deleteUser(context, payload) {
       try{
-        let msg = await axios.delete(`${TopiaURL}users/${payload.id}`)
+        console.log("payload: ", payload)
+        let msg = await axios.delete(`${TopiaURL}users/${payload}`)
         if(msg) {
           context.dispatch('fetchUsers')
           sweet({
             title: 'Delete user',
-            text: msg,
+            text: "The user has been deleted.",
             icon: "success",
             timer: 2000
           }) 
@@ -130,6 +130,28 @@ export default createStore({
         sweet({
           title: 'Error',
           text: 'An error occurred when deleting a user.',
+          icon: "error",
+          timer: 2000
+        }) 
+      }
+    },
+    async deleteProduct(context, payload) {
+      try{
+        console.log("payload: ", payload)
+        let msg = await axios.delete(`${TopiaURL}products/${payload}`)
+        if(msg) {
+          context.dispatch('fetchProducts')
+          sweet({
+            title: 'Delete product',
+            text: "some other message on product delete success",
+            icon: "success",
+            timer: 2000
+          }) 
+        }
+      }catch(e) {
+        sweet({
+          title: 'Error',
+          text: 'An error occurred when deleting a product.',
           icon: "error",
           timer: 2000
         }) 
@@ -189,7 +211,7 @@ export default createStore({
     },
     async fetchProduct(context, payload) {
       try{
-        let result = (await axios.get(`${TopiaURL}product/${payload.id}`)).data
+        let result = (await axios.get(`${TopiaURL}products/${payload}`)).data
         if(result) {
           context.commit('setOneProduct', result)
         }else {
@@ -209,17 +231,27 @@ export default createStore({
         }) 
       }
     },
-    async addProduct(context, payload) {
-      try {
-        let result = await fetch(`${TopiaURL}/product`, payload);
-      let data = result.json( );
-      console.log(data);
-      context.dispatch("fetchProducts");
-      } catch(e) {
+    async addProducts(context, payload) {
+      try{
+        let msg = (await axios.post(`${TopiaURL}addProducts/`, payload)).data
+        if(msg) {
+          context.dispatch('fetchUsers')
+          sweet({
+            title: 'User Added',
+            text: "You have successfully registered!",
+            icon: "success",
+            timer: 2000
+          }) 
+          //  
+          router.push({name: 'login'})
+        }
+      }catch(e) {
         sweet({
           title: 'Error',
-          text: '',
-        });
+          text: 'Please try again later',
+          icon: "error",
+          timer: 2000
+        }) 
       }
     }
   },

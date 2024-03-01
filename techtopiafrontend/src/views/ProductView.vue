@@ -1,19 +1,23 @@
 <template>
     <div class="container99">
         <div class="row">
-            <h2 class="display-2">Product Details</h2>
-        </div>
-        <div class="row">
-            <Card v-if="product in $store.state.products" :key="product.prodID">
+            <Card v-for="product in $store.state.product" :key="product.prodID">
+                <template #cardImg>
+                    <!-- prodUrl: {{ product.prodUrl }} -->
+                    <img :src="product.prodUrl" class="card-img"/>
+                </template>
                 <template #cardHeader>
                     <h4 class="card-title">{{ product.prodName }}</h4>
                 </template>
                 <template #cardBody>
                     <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
-                        Quantity: {{ product.prodQuantity }}
+                        Quantity: {{ product.quantity }}
                     </p>
                     <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
-                        Amount: R{{ product.prodAmount }}
+                        Amount: R{{ product.amount }}
+                    </p>
+                    <p class="card-text text-dark bg-gradient bg-dark-subtle p-2">
+                        Category: {{ product.Category }}
                     </p>
                 </template>
             </Card>
@@ -36,11 +40,12 @@ import Card from '@/components/Card.vue';
             },
             /* eslint-disable */
             fetchProducts(){
-                $store.dispatch('fetchProducts')
+                this.$store.dispatch('fetchProducts')
             }
         },
         mounted() {
-            this.$store.dispatch('fetchProduct', this.$route.params),
+            let id = +this.$route.path.split('').at(-1)
+            console.log( this.$store.dispatch('fetchProduct', id));
             this.fetchProducts
         }
     }
